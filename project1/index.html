@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Yogurt</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #7552CD;
+            font-size: 50px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 25px;
+            text-align: center;
+            border: 1px solid #7552CD;
+            padding: 16px;
+            border-radius: 4px;
+        }
+
+        img {
+            height: 400px;
+            display: block;
+            margin: 0 auto;
+            max-width: 60%;
+            border-radius: 4px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            background: #7552CD;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 7px;
+            border: none;
+            transition: all 300ms ease-in-out;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+        }
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        p {
+            line-height: 1.3;
+            margin: 0;
+        }
+
+        a {
+            line-height: 1.5;
+            display: block;
+            text-decoration: none;
+            color: #7552CD;
+            font-size: 15px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 20px;
+        }
+
+        .container {
+            border-radius: 8px;
+            background: white;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        body{
+          background: linear-gradient(99.6deg, rgb(112, 128, 152) 10.6%, rgb(242, 227, 234) 32.9%, rgb(234, 202, 213) 52.7%, rgb(220, 227, 239) 72.8%, rgb(185, 205, 227) 81.1%, rgb(154, 180, 212) 102.4%);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>I love Yogurt</h1>
+        <h2>Especially Greek Yogurt</h2>
+        <img src="//realhealthyrecipes.com/uploads/images/2019-10-24/1256129460/195859557large.jpg" alt="Greek Yogurt">
+        <br>
+        <p>
+            What makes Greek yogurt different from the regular kind? They're both rich in probiotics, calcium, vitamins
+            and
+            minerals, but Greek yogurt is strained to remove most of the whey. The result is a thicker, creamier yogurt
+            with
+            twice
+            the protein content, filling you up and keeping you full for longer.You may know that probiotics can improve
+            your gut health, but did you know those benefits extend to your mental health
+            as well? Studies have shown that adding probiotics to your diet (like those found in Greek yogurt) can
+            reduce
+            stress and
+            anxiety.
+        </p>
+        <a href="https://realhealthyrecipes.com/recipes/greek_yogurt_whipped_cream">read more on Wiki</a>
+        <br>
+        <button>Buy Greek Yogurt</button>
+        <p class="footer"> This page was built by Ashita</p>
+    </div>
+    <script>
+        function buy(){
+            const name = prompt("What is your name?")
+            const email = prompt("What is your email address?");
+            alert("Thankyou "+name+" We'll be in touch through "+email);
+        }
+        let button = document.querySelector("button");
+        button.addEventListener("click",buy);
+    </script>
+</body>
+
+</html>
