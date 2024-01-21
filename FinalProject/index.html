@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doodled</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #fbbd5a;
+            font-size: 50px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            border: 1px solid #7fcd52;
+            padding: 13px;
+            border-radius: 4px;
+        }
+        .h2style:hover{
+           opacity: 0.9;
+           background-image: url(space-doodle.jpg);
+           color: yellow;
+        }
+    
+        #doodleText{
+            font-weight: 62;
+            font-size: 1.5rem;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            background: #fbbd5a;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 7px;
+            border: none;
+            transition: all 200ms ease-in-out;
+            box-shadow: 6px 5px 12px rgba(0, 0, 0, .7);
+        }
+
+        button:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        span{
+            padding: 10px;
+             display: grid;
+             grid-template-columns: auto auto ;
+            justify-content: space-around;
+            align-items: center;
+           
+        }
+        img{
+            max-width: 360px;
+
+        }
+
+        p {
+            line-height: 1.3;
+            margin: 0;
+        }
+
+        a {
+            line-height: 1.5;
+            display: block;
+            text-decoration: none;
+            color: yellow;
+            font-size: 15px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 20px;
+        }
+
+        .container {
+          align-items: center;
+            border-radius: 12px;
+            max-width: 820px;
+            margin: 30px auto;
+            padding: 20px;
+          background: linear-gradient(to top, #09203f 0%, #537895 100%);
+            color:white ;
+        }
+
+        body {
+            background-image:url("space-doodle.jpg");
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cock a Doodle doo😉🖌️</h1>
+        <div class="h2style">
+            <h2>I💖doodling</h2>
+        </div>
+       
+        <p id="doodleText">
+            <strong>My latest doodles are👇</strong></p>
+        <br>
+        <span>
+        <img src="godDoodle.jpg" alt="Doodle">
+        <img src="god2Doodle.jpg" alt="doodle">
+        </span>
+        <br>
+        <p>
+            Do you doodle in the margins of your notes at school or work? Did you know that doodling actually helps your mind focus
+            and retain what you’re hearing? <br>
+            
+          <em>  Prayer Doodles </em>are a way to use your love for doodling and drawing in your prayers to help you focus on God. Keep
+            reading to learn how you can incorporate drawing and doodling into your prayers to bring more focus (and fun) to your
+            prayer time.
+        </p>
+        <a href="https://www.prayerandpossibilities.com/prayer-doodles-drawing-your-mind-to-focus/">read more on Wiki</a>
+        <br>
+        <button>Support my Doodles</button>
+        <p class="footer"> This page was built by Ashita</p>
+    </div>
+    <script>
+        function support() {
+            const earning=prompt("Are you earning?yes/no")
+            if(earning==="yes"){
+            const name = prompt("What is your name?")
+            const email = prompt("What is your email address?");
+            alert("Thankyou " + name + " We'll be in touch through " + email);}
+            else{
+            alert("Sorry to early to support:)")
+            }
+        }
+        let button = document.querySelector("button");
+        button.addEventListener("click", support);
+    </script>
+</body>
+
+</html>
